@@ -18,6 +18,13 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
+// app.use(
+//   cors({
+//     origin: "*", // or an array of allowed origins
+//     credentials: true,
+//   })
+// );
+
 // Serve static files (for image uploads)
 app.use("/uploads", express.static(path.resolve("./public/uploads")));
 
