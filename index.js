@@ -39,7 +39,7 @@ const blogRoutes = require("./Routes/blog");
 app.use("/api/users", userRoutes);
 app.use("/api/blogs", blogRoutes);
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
